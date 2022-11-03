@@ -332,3 +332,53 @@ footer {
 footer a {
   color: white;
 }
+
+/*Final styling of my landing banner*/
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*designing the banner button*/
+
+.btn {
+  padding: 14px 22px;
+  transition: all 0.3s ease;
+}
+
+/*more advanced styling of the banner button*/
+.btn-main {
+  background: linear-gradient(to right, #cd853f, #8b4513, #a0522d);
+  border-radius: 100px;
+  border: none;
+  font-weight: 500;
+  color: white;
+}
+
+/*adding a small animation on my button*/
+
+.btn:hover {
+  color: white;
+  transform: translateY(-5px);
+}
+
+/*Styling video button*/
+
+.video-btn {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(to right, #cd853f, #8b4513, #a0522d);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 100px;
+}
+
+/*Changing the size of my video button*/
+.video-btn i {
+  font-size: 52px;
+}
