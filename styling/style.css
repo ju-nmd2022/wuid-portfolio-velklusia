@@ -321,3 +321,14 @@ form .form-control::placeholder {
   -webkit-text-fill-color: transparent;
   font-size: 54px;
 }
+
+/*Styling the footer*/
+
+footer {
+  background: linear-gradient(to right, #cd853f, #8b4513, #a0522d);
+  color: white;
+}
+
+footer a {
+  color: white;
+}
