@@ -1,0 +1,518 @@
+<!-- Website built using website skeleton starter template from get.boostrap.com-->
+<!--Animation added using AOS Animate on scroll library-->
+
+<!doctype html>
+<html lang="en">
+<head>
+
+<!-- Required meta tags -->
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CSS -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<!--Linking the icons library-->
+
+<link rel="stylesheet" href="CSS/line-icons.css">
+
+<!--Linking to the CSS folder-->
+
+<link rel="stylesheet" href="css/style.css">
+
+<!--Adding icons, connecting them to my files-->
+
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+<!--Adding animations library to my CSS and HTML-->
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+<title>Klaudia Kluch - website</title>
+</head>
+
+<!--Adding scrollspy to automatically update Bootstrap navigation and group components based on scroll position to indicate which link is currently active in the viewport. It adds some form of animation to my website-->
+
+<body  data-bs-spy="scroll" data-bs-target=".navbar">
+      
+<!--Navbar Bootstrap Template taken from the website getbootstrap.com-->
+<!--Fixing the header adding different classes that allow me to get the effect I wanted to get to while preparing my sketches-->
+<!--Changing the color of the header area-->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white" data-aos="fade-down">
+<div class="container">
+
+<!--Adding and editing navbar-->
+
+<a class="navbar-brand" href="#">.vel klusia</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon">
+</span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+
+<!--ms-auto allowed me to align my menu elements-->
+
+<ul class="navbar-nav ms-auto">
+<ul class="nav-item">
+</ul>
+
+<!--Adding menu elements, creating classes that will allow me to make animated menu that will change colours while scrolling through the website-->
+              
+<li class="nav-item" data-aos="fade-up">
+    <a class="nav-link" href="#home">About Me</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="#hobbies">Hobbies</a>
+</li>
+
+<li class="nav-item">
+     <a class="nav-link" href="#about">Interests</a>
+</li>
+
+<li class="nav-item">
+     <a class="nav-link" href="#features">Talents</a>
+ </li>
+ 
+ <li class="nav-item">
+     <a class="nav-link" href="#reviews">Reviews</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="#city">Jönköping</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="#contact">Contact</a>
+</li>
+
+</div>
+</nav>
+
+<!--About Me section-->
+
+<section id="home">
+
+    <div class="container">
+    <div class="row">
+    </div>
+    </div>
+</section>
+
+<!--data aos introduces animations to the elements on my website-->
+
+    <div class="wrapper" data-aos="fade-up">
+    <div class="cols cols0">
+        <span class="topline">Hello, my name is Klaudia!</span>
+            <h1>I'm <span class="multiText">NMD Student</span></h1>
+            <ul class="custom">
+                <li style="padding-left: 10px"> Future Front-End Developer</li>
+                <li style="padding-left: 10px"> Student of New Media Design at Jönköping University (Sweden), International Marketing specialised in IT and Web Development at Karlstads Universitet (Sweden) and International Marketing Student at University of Lodz (Poland)</li>
+                <li style="padding-left: 10px"> Interested in front-end programming, B2B marketing, brand management, computer graphics, SEO and marketing ethics.</li>
+                <li style="padding-left: 10px">  In my spare time I learn Swedish, go hiking and cook. </li>
+                <li style="padding-left: 10px"> My individual talents according to the Gallup test: Learner, Achiever, Maximizer, Harmony, Significance, Focus, Individualization, Intellection, Relator, Competition</li>
+                <li style="padding-left: 10px"> I started studying New Media Design because I found that working in the IT industry gives me great joy. My talents, interests, skills and character traits perfectly match the profession I want to pursue in the future. My dream is to become a front-end developer, specializing in showing how the areas of marketing, business and engineering can work towards the same goal. I want to use my knowledge gained during my current and previous studies in the scientific community. I would like to be able to teach my subject at university someday, because I believe that I have a rather interesting and unconventional approach to teaching and I would like to see if I can find my way in it.</li>
+            </ul>
+    </div>
+    </div>
+
+    <div class="cols cols1">
+    </div>
+</section>
+   
+<!--Adding type animation-->
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12">
+</script>
+
+<script>
+    var typingEffect= new Typed (".multiText",{
+        strings: ["NMD student", "Coder"],
+        loop: true, 
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 200,
+        })
+</script>
+
+<!--My hobbies-->
+
+<section id="hobbies" class="text-center">
+    <div class="container">
+    <div class="row">
+    <div class="col-12 section-intro text-center" data-aos="zoom-in">
+        <h2>My Hobbies</h2>
+    <div class="divider">
+    </div>
+        <p>To find an absolute passion in your life is to look beyond what you do for a living, or have as a hobby. It is to look at who you are, what you stand for, and what makes you want to jump out of bed early on a Saturday morning even though you have no need to rise early.<br><i>– Byron Pulsifer</i>
+        </p>
+    </div>
+    </div>
+
+    <div class="row g-4">
+    <div class="col-md-4" data-aos="zoom-in">
+    <div class="hobby">
+    <div class="hobby-img">
+        <img src="photos/cooking.jpg" alt="" />
+    <div class="icon"><i class="icon-wine"></i>
+    </div>
+    </div>
+        <h5 class="mt-5 pt-4">Cooking</h5>
+        <p>I absolutely love cooking. I can merrily state that my kitchen is my playground in every sense! My dad has always been a wonderful cook, and I feel he is my inspiration.
+        </p>
+    </div>
+    </div>
+    
+    <div class="col-md-4" data-aos="zoom-in">
+    <div class="hobby">
+    <div class="hobby-img">
+        <img src="photos/music.jpg" alt="" />
+    <div class="icon"><i class="icon-megaphone"></i>
+    </div>
+    </div>
+        <h5 class="mt-5 pt-4">Listening to music</h5>
+        <p>I take pleasure in listening to music. I never really thought that this was my hobby, but I’m beginning to comprehend that it is.
+        </p>
+    </div>
+    </div>
+    
+    <div class="col-md-4" data-aos="zoom-in">
+    <div class="hobby">
+    <div class="hobby-img">
+        <img src="photos/lake.jpg" alt="" />
+    <div class="icon"><i class="icon-camera"></i>
+    </div>
+    </div>
+        <h5 class="mt-5 pt-4">Photography</h5>
+        <p>I like spending time in nature and capturing all the wonderful moments of beauty with my camera. I have been doing nature photography since I was in school.
+        </p>
+    </div>
+    </div>
+    </div>
+    </div>
+</section>
+
+<!--My Favourite Quote Section-->
+
+<section id="about" class="bg-cover" style="background-image: url(photos/background.jpg);">
+    <div class="overlay"></div>
+    <div class="container text-white text-center">
+    <div class="row">
+    <div class="col-12 section-intro text-center" data-aos="fade-up">
+        <h2>My favourite quote</h2>
+    <div class="divider"></div>
+        <p> “If only there could be an invention that bottled up a memory, like scent. And it never faded, and it never got stale. And then, when one wanted it, the bottle could be uncorked, and it would be like living the moment all over again.”<br><i>― Daphne du Maurier, Rebecca</i></p>
+    </div>
+    </div>
+    </div>
+</section>
+
+<!--Features section-->
+
+<section id="features" class="text-center">
+    <div class="container">
+    <div class="row g-4">
+    <div class="col-12 section-intro text-center" data-aos="fade-up">
+        <h2>What is important for me?</h2>
+    <div class="divider">
+    </div>
+        <p> "Tell me what you put attention to and I will tell you who you are."<br><i> - Jose Ortega y Gasset</i></p>
+    </div>
+    </div>
+    <div class="row gx-4 gy-5">
+    <div class="col-md-4 feature" data-aos="fade-up">
+    <div class="icon"><i class="icon-clipboard"></i>
+    </div>
+        <h5 class="mt-4 mb-3">Precision</h5>
+        <p>For me every word, sentence, action serves a purpose. I enjoy analysing all the facts and information, making sure everything is done accordingly.</p>
+    </div>
+    <div class="col-md-4 feature" data-aos="fade-up">
+    <div class="icon"><i class="icon-hotairballoon"></i>
+    </div>
+        <h5 class="mt-4 mb-3">Innovation</h5>
+        <p>I am commited to understanding many different points of view to fully grasp the complexity of challenges. I like to work in a dynamic, highly productive and values based places.</p>
+    </div>
+    <div class="col-md-4 feature" data-aos="fade-up">
+    <div class="icon"><i class="icon-calendar"></i>
+    </div>
+        <h5 class="mt-4 mb-3">Reliability</h5>
+        <p>I work quickly and efficiently, it is really important for me to meet deadlines and help my teammates when needed.</p>
+    </div>
+    <div class="col-md-4 feature" data-aos="fade-up">
+    <div class="icon"><i class="icon-ribbon"></i>
+    </div>
+        <h5 class="mt-4 mb-3">Respect</h5>
+        <p>I believe that respect is a glue that holds everything together. I need to have my priorities straight and do what is truly important.</p>
+    </div>
+    <div class="col-md-4 feature" data-aos="fade-up">
+    <div class="icon"><i class="icon-scissors"></i>
+    </div>
+        <h5 class="mt-4 mb-3">Adaptability</h5>
+        <p>My work style is pretty flexible and adaptable. I always keep on top of my projects because I can successfully juggle multiple tasks at once.</p>
+    </div>
+    <div class="col-md-4 feature" data-aos="fade-up">
+    <div class="icon"><i class="icon-strategy"></i>
+    </div>
+        <h5 class="mt-4 mb-3">Strategic thinking</h5>
+        <p>I usually pitch new ideas, initiate new projects, and try to figure out next steps. It is necessary for me to reach a long-term goal.</p>
+    </div>
+    </div>
+    </div>
+</section>
+
+<!--Decorative section-->
+
+<section id="about" class="bg-cover" style="background-image: url(photos/cover.jpg);">
+    <div class="overlay"></div>
+    <div class="row">
+    <div class="divider"></div>
+    </div>
+    </div>
+    </div>
+</section>
+
+<!--Reviews, testimonials section-->
+
+<section id="reviews" class="text-center">
+    <div class="container">
+    <div class="row g-4 text-start">
+    <div class="col-12 section-intro text-center">
+        <h2>Reviews</h2>
+    <div class="divider"></div>
+        <p> “Build a good name. Keep your name clean. Don’t make compromises, don’t worry about making a bunch of money or being successful — be concerned with doing good work and make the right choices and protect your work. And if you build a good name, eventually, that name will be its own currency."<br><i>- William S. Burroughs</i></p>
+    </div>
+    </div>
+    <div class="row gx-4 gy-5 text-start">
+    <div class="col-md-4" data-aos="fade-up">
+    <div class="review p-4">
+    <div class="person">
+        <img src="photos/justyna.jpg" alt="Justyna Ciepłowska">
+    <div class="text ms-3">
+        <h6 class="mb-0">Justyna Ciepłowska</h6>
+             <small>Performance Media</small>
+    </div>
+    </div>
+        <p class="pt-4">Klaudia is a very talented person and a great business partner. I have a pleasure to cooperate with her during sales proposal process of my company in 2021. Klaudia knows how to create a good relation. She is highly responsive (I never waited more than an hour for her reply with details), respectful of other people and very professional. Definitely she would be an amazing asset to any company in a marketing position!</p>
+
+    <div class="stars">
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+    </div>
+    </div>
+    </div>
+
+    <div class="col-md-4" data-aos="fade-up">
+    <div class="review p-4">
+    <div class="person">
+        <img src="photos/szymon.jpg" alt="">
+    <div class="text ms-3">
+        <h6 class="mb-0">Szymon Cegiełko</h6>
+        <small>Digital Teammates</small>
+    </div>
+    </div>
+        <p class="pt-4">Klaudia was a great professional to work with. We worked together at Digital Teammates and she helped me a lot to get started and also to understand all internal processes. We’ve worked together on several projects and Klaudia is one of the best people to have as a partner. Her work ethics is immaculate and so easy to work together with. She always goes out of her way when you ask for some help or guidance. Thanks a lot, Klaudia! You made the transition relatively smooth for me and you were very helpful. I highly recommend you as a marketing specialist and would love to work together again. Thank you for everything!</p>
+    <div class="stars">
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-4" data-aos="fade-up">
+    <div class="review p-4">
+    <div class="person">
+        <img src="photos/krzysztof.jpg" alt="Krzysztof Kozłowski">
+    <div class="text ms-3">
+        <h6 class="mb-0">Krzysztof Kozłowski</h6>
+        <small>Digital Teammates</small>
+    </div>
+    </div>
+        <p class="pt-4">I am pleased to recommend Klaudia as a great co-worker. While working with Klaudia, I had the opportunity to find out about her knowledge of WordPress, high command of the English language, which is important in foreign marketing and multicultural communication.
+                    Our cooperation also touched the work on the publication of specialized texts, where Klaudia's skills in proofreading and editing texts in the context of SEO basics. With a clear conscience, I recommend Klaudia as a co-worker who is focused on the practical use of her knowledge in the field of marketing and journalism.</p>
+
+<!--Adding stars to my testimonials-->
+
+    <div class="stars">
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-4" data-aos="fade-up">
+    <div class="review p-4">
+    <div class="person">
+        <img src="photos/mariusz.jpg" alt="">
+    <div class="text ms-3">
+        <h6 class="mb-0">Mariusz Pultyn</h6>
+        <small>Digital Teammates</small>
+    </div>
+    </div>
+        <p class="pt-4">Klaudia has been a member of marketing team at Digital Teammates. Klaudia has had a chance to gain knowledge in the field of marketing, branding, website management, as well as translations. She demonstrated strong language skills when creating translations, transcripts, and presentation scenarios. Klaudia can successfully work in foreign markets due to her friendly disposition and openness. Furthermore, Klaudia initiated the SEO implementation project at Digital Teammates - she was responsible for research, comparison of offers, selection of agencies, and subsequent cooperation with specialists. In two shakes of a lamb's tail, she can gain the skills and implement them into marketing strategies and activities. Business partners working with Klaudia indicate that her commitment, professionalism, willingness to develop, and communication methods stand out significantly and make the cooperation run in a pleasurable, executive professional, but very pro-human atmosphere. I am pleased to recommend Klaudia as a future employee. I think that her set of skills and character traits will be perfect for a project work environment that requires constant adaptation, changes, looking for solutions, and working with other people.</p>
+    <div class="stars">
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-4" data-aos="fade-up">
+     <div class="review p-4">
+    <div class="person">
+        <img src="photos/monika.jpg" alt="Monika Bocian">
+    <div class="text ms-3">
+        <h6 class="mb-0">Monika Bocian</h6>
+        <small>Level Up</small>
+    </div>
+    </div>
+        <p class="pt-4">I worked with Klaudia during her internship in the organization I manage. In the first days, Klaudia showed creativity and independence. She took the initiative to build and take over the management of the team of the group created on the Facebook channel as part of an international project. By managing the group on our channel, she set the directions for its development and contributed to the systematic and engaging activities of the recipients. As a result, the number of members of the Facebook group "Out with burn out" doubled in a short time. By taking the initiative to build a marketing team dedicated to this particular group, she contributed to the improvement of the organization's operations. Klaudia brought incredible energy to our team. She is a great leader and has highly developed soft skills, as evidenced by the fact that despite the short time of cooperation, she managed to build a great team. In her actions, Klaudia shows professionalism, responsibility and punctuality. The commitment shown from the first days of our cooperation is truly admirable.</p>
+    <div class="stars">
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-4" data-aos="fade-up">
+    <div class="review p-4">
+    <div class="person">
+        <img src="photos/agata.jpg" alt="">
+    <div class="text ms-3">
+        <h6 class="mb-0">Agata Stolarz</h6>
+        <small>Pro Progressio</small>
+    </div>
+    </div>
+        <p class="pt-4">I worked with Klaudia on a joint, one-year project for Digital Teammates. Klaudia is adapting to the new environment very quickly, as evidenced by the acquisition of the project in the middle of the year. She is creative, ambitious, competent and reliable in what she does. In addition, she is very open-minded and full of energy, which promotes communication and teamwork.</p>
+    <div class="stars">
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+        <i class='bx bx-star'></i>
+    </div>
+    </div>
+    </div>
+    </div>
+</section>
+
+<!--My new city Jönköping-->
+
+<section id="city" class="text-center">
+    <div class="container">
+    <div class="row">
+    <div class="col-12 section-intro text-center" data-aos="zoom-in">
+        <h2>My new city - Jönköping</h2>
+    <div class="divider">
+    </div>
+        <p>Jönköping is a city in southern Sweden with 112,766 inhabitants. It is situated on the southern shore of Sweden's second largest lake, Vättern, in the province of Småland. Now it is also my new home for the upcoming 3 years. Jönköping has a special place in my heart that is why I wanted to show you my favourite attractions in town. 
+        </p>
+    </div>
+    </div>
+
+    <div class="row g-4">
+    <div class="col-md-4" data-aos="zoom-in">
+    <div class="city">
+    <div class="city-img">
+        <img src="photos/rosarium.jpg" alt="" />
+    <div class="icon"><i class="icon-compass"></i>
+    </div>
+    </div>
+        <h5 class="mt-5 pt-4">Rosarium</h5>
+        <p>Amazing place for relaxing in nature, situaded close to the city center. One of the best rose gardens in Sweden. I would recommend visiting it in late spring, summer or first part of September!
+        </p>
+    </div>
+    </div>
+
+    <div class="col-md-4" data-aos="zoom-in">
+    <div class="city">
+    <div class="city-img">
+        <img src="photos/vattern.jpg" alt="" />
+    <div class="icon"><i class="icon-map"></i>
+    </div>
+    </div>
+        <h5 class="mt-5 pt-4"> Vätterstrand</h5>
+        <p>Several kilometers of sandy beach and large grassy areas in the middle of Jönköping. Jönköping's outdoor swimming area, really popular among locals. You can easily get to Vätterstranden on foot, by bicycle or by bus. It is also a perfect place for a picnic or a date.
+        </p>
+    </div>
+    </div>
+    
+    <div class="col-md-4" data-aos="zoom-in">
+    <div class="city">
+    <div class="city-img">
+        <img src="photos/slottsvillan.jpg" alt="" />
+    <div class="icon"><i class="icon-briefcase"></i>
+    </div>
+    </div>
+        <h5 class="mt-5 pt-4">Hotel Slottsvillan</h5>
+        <p>Hotel Slottsvillan is a 12-room boutique hotel set in a heritage-listed building full of character and charm. Hotel offers wine tastings and serves top-quality food made from local ingredients. Hotel was built by first owners of Huskvarna factory.
+        </p>
+    </div>
+    </div>
+    </div>
+    </div>
+</section>
+
+<!--CONTACT-->
+
+<section id="contact" class="bg-cover text-white" style="background-image: url(photos/cover.jpg);">
+    <div class="overlay"></div>
+    <div class="container">
+    <div class="row">
+    <div class="col-12 section-intro text-center" data-aos="fade-up">
+        <h2>Get in touch</h2>
+    <div class="divider"></div>
+        <p> Do you want to talk more about how can I help your company? Do not hesitate to drop me a message.</p>
+    </div>
+    </div>
+    <div class="row"></div>
+    <div class="col-md-8 mx-auto" data-aos="fade-up"></div>
+        <form action="#" class="row g-4">
+    <div class="form-group col-md-6">
+        <input type="text" class="form-control" placeholder="Full name">
+    </div>
+    <div class="form-group col-md-6">
+        <input type="email" class="form-control" placeholder="Email adress">
+    </div>
+    <div class="form-group col-md-12">
+        <input type="text" class="form-control" placeholder="Subject">
+    </div>
+    <div class="form-group col-md-12">
+        <textarea name="" id="" cols="30" rows="4" class="form-control" placeholder="Message"></textarea>
+    </div>
+    <div class="text-center">
+        <button class="btn btn-main" type="submit">Send Message</button>
+    </div>
+    </form>
+    </div>
+</section>
+<!--Bootstrap Bundle with Popper-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+<!--Adding animations library for my JS-->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!--Connecting my JS to the HTML and CSS-->
+
+<script src="javascript.js">
+</script>
+
+</body>
+</html>
