@@ -1,0 +1,323 @@
+/*Adding Google Font to my website*/
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto&display=swap");
+body {
+  font-family: "Libre Baskerville", sans-serif;
+  line-height: 1.8;
+}
+
+/*Styling my font
+Choosing which elements should have the following styling
+Font weight is the value that determines how bold or light the text will appear*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+/*Styling the main landing banner
+Padding is used to create space around an element's content, inside of any defined borders.
+The overflow property specifies what should happen if content overflows an element's box.
+This property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area.*/
+
+.wrapper {
+  padding: 0 10%;
+  overflow: hidden;
+}
+
+.cols {
+  width: 100%;
+  }
+
+  .topline {
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #a0522d;
+  }
+  
+  h1 {
+      display: block;
+      font-size: 5em;
+      font-weight: 900;
+      color:#cd853f;
+  }
+
+
+/*The text-transform CSS property specifies how to capitalize an element's text. It can be used to make text appear in all-uppercase or all-lowercase, or with each word capitalized. It also can help improve legibility for ruby.*/
+  .multiText {
+    color:#a0522d;
+    text-transform: capitalize;
+  }
+  
+  .custom li:nth-child(1) {
+   list-style-type: "💼";
+  }
+
+  .custom li:nth-child(2) {
+    list-style-type: "📚";
+  }
+
+  .custom li:nth-child(3) {
+    list-style-type: "💡";
+  }
+
+  .custom li:nth-child(4) {
+    list-style-type: "🇸🇪";
+  }
+
+  .custom li:nth-child(5) {
+    list-style-type: "🌿";
+  }
+
+  .custom li:nth-child(6) {
+    list-style-type: " 👩‍🎓";
+  }
+ 
+/*Choosing the style of all the images on the website, making my photos responsive on different devices*/
+
+img {
+  width: 100%;
+}
+
+/*Styling the banner*/
+
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  z-index: 2;
+  position: relative;
+  background-color:  white;
+}
+
+/*I created the gradient layer and added the opacity that was displayed on my banner*/
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(205, 133, 63, 0.7),
+    rgba(139, 69, 19, 0.7),
+    rgba(160, 82, 45, 0.7)
+  );
+  z-index: -1;
+}
+
+/*It allowed me to fix the images that create flow on the website*/
+
+.bg-cover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/*Final styling of my landing banner*/
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*more advanced styling of the banner button*/
+.btn-main {
+  background: linear-gradient(to right, #cd853f, #8b4513, #a0522d);
+  border-radius: 100px;
+  border: none;
+  font-weight: 500;
+  color: white;
+}
+
+/*adding a small animation on my button*/
+
+.btn:hover {
+  color: white;
+  transform: translateY(-5px);
+}
+
+/*Styling the header and menu*/
+
+.navbar {
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+/*Styling to my scrollspy*/
+/*Using bootstrap for my gradient text*/
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav.nav-link {
+  background: -webkit-linear-gradient(#cd853f, #8b4513, #a0522d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*Styling the first part of the hobbies section*/
+
+.section-intro {
+  margin-bottom: 40px;
+}
+
+/*Adding the nice colorful line to the layout of the hobbies section, fixing the layout of the hobbies introduction*/
+
+.section-intro .divider {
+  height: 4px;
+  width: 70px;
+  background: linear-gradient(to right, #cd853f, #8b4513, #a0522d);
+  margin: 16px auto;
+}
+
+/*Placing the icons in the section Hobbies*/
+
+.hobby .hobby-img {
+  position: relative;
+}
+
+/*Styling the icons in the section Hobbies*/
+
+.hobby .hobby-img .icon {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(to right, #cd853f, #8b4513, #a0522d);
+  color: white;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 44px;
+
+  /*I needed to use the absolute positioning to achieve the layout I designed in my sketches, this element needed to be blocked to make my website fully responsive and perfectly working on different devices*/
+
+  position: absolute;
+  bottom: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*Finally achieving the perfect size of my icon*/
+
+.hobby .hobby-img .icon i {
+  font-size: 36px;
+}
+
+/*styling my feature icons and adding nice gradient to them*/
+
+.feature i {
+  background: -webkit-linear-gradient(#cd853f, #8b4513, #a0522d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 54px;
+}
+
+/* styling and adding nice shadow to my references*/
+
+.review {
+  box-shadow: 0 12px 12px rgba(139, 69, 19, 0.7);
+}
+
+.review .person {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(139, 69, 19, 0.7);
+  padding-bottom: 18px;
+}
+
+.review .person img {
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+}
+
+/*styling stars in testimonials*/
+
+.review .stars {
+  color: rgba(205, 133, 63, 0.7);
+}
+
+/*Styling the contact form*/
+
+form .form-control {
+  border-radius: 0;
+  background: transparent;
+  color: white;
+  border-color: rgb(255, 255, 255, 0.5);
+}
+
+form .form-control:focus {
+  color: white;
+  background: transparent;
+  border-color: white;
+}
+
+form input.form-control {
+  height: 54px;
+}
+
+form .form-control::placeholder {
+  color: white;
+}
+
+/*Styling the first part of the city section*/
+
+.section-intro {
+  margin-bottom: 40px;
+}
+
+/*Adding the nice colorful line to the layout of the city section, fixing the layout of the city introduction*/
+
+.section-intro .divider {
+  height: 4px;
+  width: 70px;
+  background: linear-gradient(to right, #cd853f, #8b4513, #a0522d);
+  margin: 16px auto;
+}
+
+/*Placing the icons in the section about the city*/
+
+.city .city-img {
+  position: relative;
+}
+
+/*Styling the icons in the section about the city*/
+
+.city .city-img .icon {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(to right, #cd853f, #8b4513, #a0522d);
+  color: white;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 44px;
+
+  /*I needed to use the absolute positioning to achieve the layout I designed in my sketches, this element needed to be blocked to make my website fully responsive and perfectly working on different devices*/
+
+  position: absolute;
+  bottom: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*Finally achieving the perfect size of my icon*/
+
+.city .city-img .icon i {
+  font-size: 36px;
+}
+
+/*styling my feature icons and adding nice gradient to them*/
+
+.feature i {
+  background: -webkit-linear-gradient(#cd853f, #8b4513, #a0522d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 54px;
+}
