@@ -365,7 +365,7 @@ footer a {
   transform: translateY(-5px);
 }
 
-/*Styling video button*/
+/*Styling button that is going to redirect to Jonkoping website*/
 
 .video-btn {
   width: 60px;
@@ -378,7 +378,7 @@ footer a {
   border-radius: 100px;
 }
 
-/*Changing the size of my video button*/
+/*Changing the size of my Jonkoping button*/
 .video-btn i {
   font-size: 52px;
 }
