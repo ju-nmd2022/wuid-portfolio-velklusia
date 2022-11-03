@@ -1,1 +1,212 @@
+<!-- Website built using website skeleton starter template from get.boostrap.com-->
+<!--Animation added using AOS Animate on scroll library-->
 
+<!doctype html>
+<html lang="en">
+<head>
+
+<!-- Required meta tags -->
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CSS -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<!--Linking the icons library-->
+
+<link rel="stylesheet" href="styling/line-icons.css">
+
+<!--Linking to the CSS folder-->
+
+<link rel="stylesheet" href="styling/style.css">
+
+<!--Adding icons, connecting them to my files-->
+
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+<!--Adding animations library to my CSS and HTML-->
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+<title>Klaudia Kluch - website</title>
+</head>
+
+<!--Adding scrollspy to automatically update Bootstrap navigation and group components based on scroll position to indicate which link is currently active in the viewport. It adds some form of animation to my website-->
+
+<body  data-bs-spy="scroll" data-bs-target=".navbar">
+      
+<!--Navbar Bootstrap Template taken from the website getbootstrap.com-->
+<!--Fixing the header adding different classes that allow me to get the effect I wanted to get to while preparing my sketches-->
+<!--Changing the color of the header area-->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white" data-aos="fade-down">
+<div class="container">
+
+<!--Adding and editing navbar-->
+
+<a class="navbar-brand" href="#">.vel klusia</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon">
+</span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+
+<!--ms-auto allowed me to align my menu elements-->
+
+<ul class="navbar-nav ms-auto">
+<ul class="nav-item">
+</ul>
+
+<!--Adding menu elements, creating classes that will allow me to make animated menu that will change colours while scrolling through the website-->
+              
+<li class="nav-item" data-aos="fade-up">
+    <a class="nav-link" href="#city">Jönköping</a>
+</li>
+</div>
+</nav>
+
+<!--About Me section-->
+
+<section id="home">
+
+    <div class="container">
+    <div class="row">
+    </div>
+    </div>
+</section>
+
+<!--data aos introduces animations to the elements on my website-->
+
+    <div class="wrapper" data-aos="fade-up">
+    <div class="cols cols0">
+        <span class="topline">Welcome to</span>
+      <h1>I'm <span class="multiText">Jönköping</span></h1>
+    </div>
+    </div>
+
+    <div class="cols cols1">
+    </div>
+</section>
+   
+<!--Adding type animation-->
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12">
+</script>
+
+<script>
+    var typingEffect= new Typed (".multiText",{
+        strings: ["NMD student", "Coder"],
+        loop: true, 
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 200,
+        })
+</script>
+
+<!--Decorative section-->
+
+<section id="about" class="bg-cover" style="background-image: url(photos/cover.jpg);">
+    <div class="overlay"></div>
+    <div class="row">
+    <div class="divider"></div>
+    </div>
+    </div>
+    </div>
+</section>
+    
+<!--My new city Jönköping-->
+
+<section id="city" class="text-center">
+    <div class="container">
+    <div class="row">
+    <div class="col-12 section-intro text-center" data-aos="zoom-in">
+        <h2>My new city - Jönköping</h2>
+    <div class="divider">
+    </div>
+        <p>Jönköping is a city in southern Sweden with 112,766 inhabitants. It is situated on the southern shore of Sweden's second largest lake, Vättern, in the province of Småland. Now it is also my new home for the upcoming 3 years. Jönköping has a special place in my heart that is why I wanted to show you my favourite attractions in town. 
+        </p>
+    </div>
+    </div>
+
+    <div class="row g-4">
+    <div class="col-md-4" data-aos="zoom-in">
+    <div class="city">
+    <div class="city-img">
+        <img src="photos/rosarium.jpg" alt="" />
+    <div class="icon"><i class="icon-compass"></i>
+    </div>
+    </div>
+        <h5 class="mt-5 pt-4">Rosarium</h5>
+        <p>Amazing place for relaxing in nature, situated close to the city center. One of the best rose gardens in Sweden. I would recommend visiting it in late spring, summer or first part of September!
+        </p>
+    </div>
+    </div>
+
+    <div class="col-md-4" data-aos="zoom-in">
+    <div class="city">
+    <div class="city-img">
+        <img src="photos/vattern.jpg" alt="" />
+    <div class="icon"><i class="icon-map"></i>
+    </div>
+    </div>
+        <h5 class="mt-5 pt-4"> Vätterstrand</h5>
+        <p>Several kilometers of sandy beach and large grassy areas in the middle of Jönköping. Jönköping's outdoor swimming area, really popular among locals. You can easily get to Vätterstranden on foot, by bicycle or by bus. It is also a perfect place for a picnic or a date.
+        </p>
+    </div>
+    </div>
+    
+    <div class="col-md-4" data-aos="zoom-in">
+    <div class="city">
+    <div class="city-img">
+        <img src="photos/slottsvillan.jpg" alt="" />
+    <div class="icon"><i class="icon-briefcase"></i>
+    </div>
+    </div>
+        <h5 class="mt-5 pt-4">Hotel Slottsvillan</h5>
+        <p>Hotel Slottsvillan is a 12-room boutique hotel set in a heritage-listed building full of character and charm. Hotel offers wine tastings and serves top-quality food made from local ingredients. Hotel was built by first owners of Huskvarna factory.
+        </p>
+    </div>
+    </div>
+    </div>
+    </div>
+</section>
+
+<!--FOOTER-->
+
+<footer class="py-4">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-6">
+        <p class="mb-0">Designed by Klaudia Kluch</p>    
+    </div>
+    <div class="col-md-6 text-md-end">
+    <div>
+       <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+       <a href="#"><i class='bx bxl-twitter'></i></a>
+       <a href="#"><i class='bx bxl-linkedin'></i></a>
+       <a href="#"><i class='bx bxl-instagram'></i></a>
+       <a href="#"><i class='bx bxl-github'></i></a>  
+    </div>
+    </div>
+    </div>
+    </div>
+</footer>
+    
+<!--Bootstrap Bundle with Popper-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+<!--Adding animations library for my JS-->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!--Connecting my JS to the HTML and CSS-->
+
+<script src="javascript.js">
+</script>
+
+</body>
+</html>
