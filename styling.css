@@ -164,14 +164,14 @@ footer a {
   align-items: center;
 }
 
-/*designing the banner button*/
+/*designing the button*/
 
 .btn {
   padding: 14px 22px;
   transition: all 0.3s ease;
 }
 
-/*more advanced styling of the banner button*/
+/*more advanced styling of the button*/
 .btn-main {
   background: linear-gradient(to right, #cd853f, #8b4513, #a0522d);
   border-radius: 100px;
@@ -185,22 +185,4 @@ footer a {
 .btn:hover {
   color: white;
   transform: translateY(-5px);
-}
-
-/*Styling button that is going to redirect to Jonkoping website*/
-
-.video-btn {
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(to right, #cd853f, #8b4513, #a0522d);
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  border-radius: 100px;
-}
-
-/*Changing the size of my Jonkoping button*/
-.video-btn i {
-  font-size: 52px;
 }
