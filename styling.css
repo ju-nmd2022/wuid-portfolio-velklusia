@@ -45,7 +45,7 @@ This property specifies whether to clip content or to add scrollbars when an ele
       display: block;
       font-size: 5em;
       font-weight: 900;
-      color:#cd853f;
+      color:white;
   }
  
 /*Choosing the style of all the images on the website, making my photos responsive on different devices*/
