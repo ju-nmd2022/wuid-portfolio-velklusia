@@ -35,6 +35,118 @@
 
 <!--data aos introduces animations to the elements on my website-->
     
+<!-- Website built using website skeleton starter template from get.boostrap.com-->
+<!--Animation added using AOS Animate on scroll library-->
+
+<!doctype html>
+<html lang="en">
+<head>
+
+<!-- Required meta tags -->
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CSS -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<!--Linking the icons library-->
+
+<link rel="stylesheet" href="styling/line-icons.css">
+
+<!--Linking to the CSS folder-->
+
+<link rel="stylesheet" href="styling/style.css">
+
+<!--Adding icons, connecting them to my files-->
+
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+<!--Adding animations library to my CSS and HTML-->
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+<title>Klaudia Kluch - website</title>
+</head>
+
+<!--Adding scrollspy to automatically update Bootstrap navigation and group components based on scroll position to indicate which link is currently active in the viewport. It adds some form of animation to my website-->
+
+<body  data-bs-spy="scroll" data-bs-target=".navbar">
+      
+<!--Navbar Bootstrap Template taken from the website getbootstrap.com-->
+<!--Fixing the header adding different classes that allow me to get the effect I wanted to get to while preparing my sketches-->
+<!--Changing the color of the header area-->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white" data-aos="fade-down">
+<div class="container">
+
+<!--Adding and editing navbar-->
+
+<a class="navbar-brand" href="#">.vel klusia</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon">
+</span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+
+<!--ms-auto allowed me to align my menu elements-->
+
+<ul class="navbar-nav ms-auto">
+<ul class="nav-item">
+</ul>
+
+<!--Adding menu elements, creating classes that will allow me to make animated menu that will change colours while scrolling through the website-->
+              
+<li class="nav-item" data-aos="fade-up">
+    <a class="nav-link" href="#home">About Me</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="#hobbies">Hobbies</a>
+</li>
+
+<li class="nav-item">
+     <a class="nav-link" href="#about">Interests</a>
+</li>
+
+<li class="nav-item">
+     <a class="nav-link" href="#features">Talents</a>
+ </li>
+ 
+ <li class="nav-item">
+     <a class="nav-link" href="#reviews">Reviews</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="#contact">Contact</a>
+</li>
+
+</div>
+</nav>
+
+<!--data aos introduces animations to the elements on my website-->
+    
+    <section id="home" class="bg-cover hero-section" class="overlay" style="background-image: url(photos/cover.jpg);">
+    <div class="overlay"></div>
+    <div class="container text-white text-center">
+    <div class="row">
+    <div class="col-12">
+
+<!--data aos introduces animations to the elements on my website-->
+
+            <h1 class="display-4" data-aos="fade-up">.vel klusia <br> is a web design <br> and branding studio <br> based in Sweden</h1>
+                <p class="my-4" data-aos="zoom-in">I help to build meaningful and transparent brands <br> through design that reflects the core values of the brand.</p>
+
+<!--Button-->
+<a href="#" class="btn btn-main">Get started</a>
+    
+</div>
+</div>
+</div>
+</section>
+
 <!--My new city Jönköping-->
 
 <section id="city" class="text-center data-aos="fade-up">
@@ -92,6 +204,17 @@
     </div>
 </section>
 
+<!--Decorative section-->
+
+<section id="about" class="bg-cover" style="background-image: url(photos/cover.jpg);">
+    <div class="overlay"></div>
+    <div class="row">
+    <div class="divider"></div>
+    </div>
+    </div>
+    </div>
+</section>
+    
 <!--FOOTER-->
 
 <footer class="py-4">
@@ -128,3 +251,8 @@
 
 </body>
 </html>
+
+
+
+
+
