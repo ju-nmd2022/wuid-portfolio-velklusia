@@ -337,8 +337,13 @@ footer a {
   background color: red;
   display: grid;
   align-items: end;
+  padding: 30px;
 }
   
+.portfolio-overlay h3
+.portfolio-overlay h6 {
+  color: white;
+}
     
     
     
