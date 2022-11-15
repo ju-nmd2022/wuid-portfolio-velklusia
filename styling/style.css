@@ -334,18 +334,24 @@ footer a {
   left: 0;
   width: 100%;
   height: 100%;
-  background color: red;
-  display: grid;
-  align-items: end;
+  background color: #cd853f;
+  display: flex;
+  align-items: flex-end;
   padding: 30px;
+  opacity: 0;
 }
   
 .portfolio-overlay h3
 .portfolio-overlay h6 {
   color: white;
 }
-    
-    
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1; 
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1);}
     
     
     
