@@ -318,39 +318,7 @@ footer a {
   transform: translateY(-5px);
 }
 
-/*Styling the skills section*/
 
-.skills h2 {
-  
-  line-height:1;
-  margin-bottom:3rem;
-}
-  
-  .skills_container {
-    display: grid;
-    grid-template-column: 40% 60%;
-    gap: 4rem;
-    
-  .skills_left p {
-    margin: 1rem 0 3rem;
-    }
-    
-   .skills_right {
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     gap: 1.2rem;
-    }
-    
-    .skill {
-      padding: 2rem;
-      border-radius: 2rem;
-      transition: var(--transition);
-    }
-    
-    .skill {
-      box-shadow: 0, 3rem rgba(0,0,0,0.3);
-    }
-    
     
     
     
