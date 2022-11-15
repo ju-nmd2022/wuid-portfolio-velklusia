@@ -317,6 +317,59 @@ footer a {
   color: white;
   transform: translateY(-5px);
 }
+
+/* ==========  PORTFOLIO ==========  */
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    height: 100%;
+}
+
+.portfolio-item .overlay {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.4s ease;
+    color: #c4c4c4;
+}
+
+.portfolio-item .h4 {
+    color: #fff;
+}
+
+.portfolio-btn {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b3040d;
+    font-size: 26px;
+    color: #fff;
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    transition: all 0.4s ease;
+}
+
+.portfolio-btn:hover {
+    transform: rotate(45deg);
+    color: #fff;
+}
+
+.portfolio-item:hover .overlay {
+    left: 0;
+}
     
     
     
