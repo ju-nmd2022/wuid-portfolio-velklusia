@@ -218,35 +218,6 @@ section {
   font-size: 54px;
 }
 
-/* styling my portfolio gallery*/
-
-.portfolio-item {
-  position-relative;
-}
-
-.portfolio-item img {
-  height: 100%;
-}
-.portfolio-item .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0,0,0,0.6);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  transition: all 0.3s ease;
-  color: green;
-}
-    
-.portfolio-item .h4 {
-  color: white;
-}
-  
-
-
 /* styling and adding nice shadow to my references*/
 
 .review {
