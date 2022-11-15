@@ -8,6 +8,7 @@ $('.portfolio-slider') .owlCarousel (({
   nav: true,
   dots: true,
   smartSpeed: 1000,
+  margin: 24,
   navText: ["<i class="ri-arrow-up-line"></i>],
             responsive; {
             0:{
