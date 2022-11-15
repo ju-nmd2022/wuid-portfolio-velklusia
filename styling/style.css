@@ -24,6 +24,7 @@ Padding is used to create space around an element's content, inside of any defin
 The overflow property specifies what should happen if content overflows an element's box.
 This property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area.*/
 
+
 .wrapper {
   padding: 0 10%;
   overflow: hidden;
