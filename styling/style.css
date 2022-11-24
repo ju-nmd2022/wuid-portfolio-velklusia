@@ -41,19 +41,60 @@ This property specifies whether to clip content or to add scrollbars when an ele
     letter-spacing: 5px;
     color: #a0522d;
   }
-  
+
+  :root {
+    --bg-color: #ffff;
+    --typewriterSpeed: 6s;
+    --typewriterCharacters: 24;
+  }
   h1 {
-      display: block;
-      font-size: 5em;
-      font-weight: 900;
-      color:#cd853f;
+    font-size: 3em;
+    position: relative;
+    width: max-content;
+    color: #8b4513;
+  }
+  
+  h1::before,
+  h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  h1::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards;
+  }
+  
+  h1::after {
+    width: 0.125em;
+    background: #a0522d;
+    animation: typewriter var(--typewriterSpeed)
+        steps(var(--typewriterCharacters)) 1s forwards,
+      blink 750ms steps(var(--typewriterCharacters)) infinite;
   }
 
-
-/*The text-transform CSS property specifies how to capitalize an element's text. It can be used to make text appear in all-uppercase or all-lowercase, or with each word capitalized. It also can help improve legibility for ruby.*/
-  .multiText {
-    color:#a0522d;
-    text-transform: capitalize;
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   
   .custom li:nth-child(1) {
@@ -268,11 +309,6 @@ form .form-control::placeholder {
 
   /*I needed to use the absolute positioning to achieve the layout I designed in my sketches, this element needed to be blocked to make my website fully responsive and perfectly working on different devices*/
 
-  position: absolute;
-  bottom: -45px;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
 /*styling my feature icons and adding nice gradient to them*/
 
