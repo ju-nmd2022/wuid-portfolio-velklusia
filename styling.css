@@ -24,34 +24,44 @@ Padding is used to create space around an element's content, inside of any defin
 The overflow property specifies what should happen if content overflows an element's box.
 This property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area.*/
 
-.wrapper {
-  padding: 0 10%;
-  overflow: hidden;
-}
-
-.cols {
-  width: 100%;
-  }
-
-  .topline {
-    display: block;
-    position: relative;
-    font-size: 35px;
-    letter-spacing: 5px;
-    color: #a0522d;
-  }
   
   h1 {
       display: block;
       font-size: 5em;
       font-weight: 900;
-      color: white;
+      color:white;
   }
  
 /*Choosing the style of all the images on the website, making my photos responsive on different devices*/
 
 img {
   width: 100%;
+}
+
+/*Styling the banner*/
+
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  z-index: 2;
+  position: relative;
+  background-color:  white;
+}
+
+/*I created the gradient layer and added the opacity that was displayed on my banner*/
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(205, 133, 63, 0.7),
+    rgba(139, 69, 19, 0.7),
+    rgba(160, 82, 45, 0.7)
+  );
+  z-index: -1;
 }
 
 /*It allowed me to fix the images that create flow on the website*/
@@ -69,6 +79,22 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/*more advanced styling of the banner button*/
+.btn-main {
+  background: linear-gradient(to right, #cd853f, #8b4513, #a0522d);
+  border-radius: 100px;
+  border: none;
+  font-weight: 500;
+  color: white;
+}
+
+/*adding a small animation on my button*/
+
+.btn:hover {
+  color: white;
+  transform: translateY(-5px);
 }
 
 /*Styling the header and menu*/
@@ -93,7 +119,7 @@ img {
   margin-bottom: 40px;
 }
 
-/*Adding the nice colorful line to the layout of the city section, fixing the layout of the city introduction*/
+/*Adding the nice colorful line to the layout of the hobbies section, fixing the layout of the hobbies introduction*/
 
 .section-intro .divider {
   height: 4px;
@@ -101,6 +127,8 @@ img {
   background: linear-gradient(to right, #cd853f, #8b4513, #a0522d);
   margin: 16px auto;
 }
+
+/*Placing the icons in the section Hobbies*/
 
 /*Placing the icons in the section about the city*/
 
@@ -135,7 +163,7 @@ img {
   font-size: 36px;
 }
 
-/*styling my feature icons and adding nice gradient to them*/
+/*styling my icons and adding nice gradient to them*/
 
 .feature i {
   background: -webkit-linear-gradient(#cd853f, #8b4513, #a0522d);
@@ -171,14 +199,6 @@ footer a {
   transition: all 0.3s ease;
 }
 
-/*more advanced styling of the button*/
-.btn-main {
-  background: linear-gradient(to right, #cd853f, #8b4513, #a0522d);
-  border-radius: 100px;
-  border: none;
-  font-weight: 500;
-  color: white;
-}
 
 /*adding a small animation on my button*/
 
@@ -186,3 +206,5 @@ footer a {
   color: white;
   transform: translateY(-5px);
 }
+    
+       
