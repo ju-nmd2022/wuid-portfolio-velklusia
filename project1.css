@@ -1,1 +1,122 @@
+/*Adding Google Font to my website*/
 
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto&display=swap");
+body {
+  font-family: "Libre Baskerville", sans-serif;
+  line-height: 1.8;
+}
+
+/*Styling my font
+Choosing which elements should have the following styling
+Font weight is the value that determines how bold or light the text will appear*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+/*Styling the main landing banner
+Padding is used to create space around an element's content, inside of any defined borders.
+The overflow property specifies what should happen if content overflows an element's box.
+This property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area.*/
+
+
+.wrapper {
+  padding: 0 10%;
+  overflow: hidden;
+}
+
+.cols {
+  width: 100%;
+  }
+
+  .topline {
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #a0522d;
+  }
+
+  :root {
+    --bg-color: #ffff;
+    --typewriterSpeed: 6s;
+    --typewriterCharacters: 24;
+  }
+  h1 {
+    font-size: 3em;
+    position: relative;
+    width: max-content;
+    color: #8b4513;
+  }
+  
+  h1::before,
+  h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  h1::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards;
+  }
+  
+  h1::after {
+    width: 0.125em;
+    background: #a0522d;
+    animation: typewriter var(--typewriterSpeed)
+        steps(var(--typewriterCharacters)) 1s forwards,
+      blink 750ms steps(var(--typewriterCharacters)) infinite;
+  }
+
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .custom li:nth-child(1) {
+   list-style-type: "💼";
+  }
+
+  .custom li:nth-child(2) {
+    list-style-type: "📚";
+  }
+
+  .custom li:nth-child(3) {
+    list-style-type: "💡";
+  }
+
+  .custom li:nth-child(4) {
+    list-style-type: "🇸🇪";
+  }
+
+  .custom li:nth-child(5) {
+    list-style-type: "🌿";
+  }
+
+  .custom li:nth-child(6) {
+    list-style-type: " 👩‍🎓";
+  }
